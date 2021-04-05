@@ -1,0 +1,14 @@
+{
+"name": "@avindak/xgeoip",
+"version": "0.1.1",
+"description": "Resolve IP addresses to countries in memory",
+  "license": "MIT",
+  "repository": "avindak/xgeoip",
+  "main": "geoip/xgeoip",
+  "keywords": [
+    "geo ip",
+    "geoip",
+    "ip2nation",
+    "ip to country"
+  ]
+}
