@@ -1,11 +1,16 @@
 {
 "name": "@avindak/xgeoip",
-"version": "0.1.1",
+"dependencies": {
+    "adm-zip": "^0.5.5",
+    "sqlite3": "^5.0.2"
+  },
+"version": "0.1.9",
 "description": "Resolve IP addresses to countries in memory",
   "license": "MIT",
   "repository": "avindak/xgeoip",
   "main": "geoip/xgeoip",
   "keywords": [
+    "ip lookup",  	
     "geo ip",
     "geoip",
     "ip2nation",

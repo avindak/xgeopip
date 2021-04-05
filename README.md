@@ -1,17 +1,17 @@
 # @avindak/xgeopip
 
-[![npm (scoped)](https://img.shields.io/npm/v/@avindak/xgeopip.svg)](https://www.npmjs.com/package/@avindak/xgeopip)
-[![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/@avindak/xgeopip.svg)](https://www.npmjs.com/package/@avindak/xgeopip)
+[![npm (scoped)](https://img.shields.io/npm/v/@avindak/xgeoip.svg)](https://www.npmjs.com/package/@avindak/xgeoip)
+[![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/@avindak/xgeoip.svg)](https://www.npmjs.com/package/@avindak/xgeoip)
 
 Provides a fast, seamless in memory ip to country functionality based on the ip2nation db.
 
-- Minimal dependencies (adm-zip)
+- Dependencies (adm-zip, sqlite3)
 - Completely free
 - Country resolution only
 - Queries / sec > 2.3k per core
 - Memory footprint < 40 MB
 - Command line support
-
+- Does not use MaxMind
 
 ## Install
 
@@ -22,7 +22,8 @@ $ npm install @avindak/xgeopip
 ## Usage
 
 ```js
-const geoip = require('../geoip/xgeoip');
+const geoip = require('@avindak/xgeoip');
+
 await geoip.load_memory();
 //AU
 let res = await geoip.resolve("1.1.1.1");
@@ -54,3 +55,7 @@ console.log(res.country_code);
 
 
 ```
+
+This uses the database from :
+http://www.ip2nation.com/
+
